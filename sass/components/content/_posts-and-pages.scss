@@ -1,0 +1,208 @@
+.sticky {
+  display: block;
+}
+
+.post,
+.page {
+  margin: 0 0 1.5em;
+}
+
+.updated:not(.published) {
+  display: none;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+  margin: 1.5em 0 0;
+}
+
+.page-links {
+  clear: both;
+  margin: 0 0 1.5em;
+}
+h1 {
+  text-align: center;
+}
+
+// front page
+.home {
+  p {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 30rem;
+  }
+  figure {
+    max-width: 38rem;
+    margin: 1rem auto;
+  }
+  .crog-features {
+    text-align: center;
+    max-width: 54rem;
+    margin: 0 auto;
+    div {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center;
+      margin: 0 1rem;
+      @media screen and (min-width: 32rem) {
+        flex-direction: row;
+        justify-content: space-evenly;
+      }
+    }
+  }
+}
+//Students page
+.all-students {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: center;
+  @media screen and (min-width: 32rem) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    max-width: 56rem;
+  }
+  .single-student {
+    border: 2px solid black;
+    border-radius: 4px;
+    max-width: 15rem;
+    margin: 1rem;
+    h2 {
+      text-align: center;
+      margin-bottom: 0.5rem;
+    }
+    img {
+      margin: 0 auto;
+      display: block;
+      border-radius: 4px;
+    }
+    p {
+      margin: 0.25rem 0.5rem;
+    }
+  }
+}
+// Student Taxonomy page
+.taxonomy-students {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.taxonomy-student {
+  margin: 1rem;
+  border: 2px solid black;
+  border-radius: 4px;
+  max-width: 50rem;
+  .name-link {
+    width: 100%;
+    color: black;
+    display: block;
+    margin: 0 0 0.25rem 1rem;
+    h2 {
+      margin: 0;
+    }
+  }
+  img {
+    display: inline;
+    float: left;
+    margin: 0 0.5rem 1rem 0.5rem;
+  }
+  div {
+    margin: 1rem;
+  }
+}
+
+// Single Student Page
+.student-page {
+  max-width: 50rem;
+  margin: 0 auto;
+}
+.post-thumbnail {
+  width: 40%;
+  min-width: 10rem;
+  max-width: 25rem;
+  float: left;
+  margin: 0 0.5rem;
+  img {
+    border: 2px solid black;
+    border-radius: 4px;
+  }
+}
+.other-students-links {
+  list-style: none;
+  a {
+    text-decoration: none;
+    color: blue;
+  }
+}
+
+// Staff Page
+.staff-taxonomy {
+  margin: 1rem auto;
+  max-width: 50rem;
+}
+.single-staff {
+  border: 2px solid black;
+  border-radius: 4px;
+  margin: 0.5rem;
+  p,
+  h3 {
+    margin: 0.5rem;
+  }
+  h4 {
+    margin: 0.5rem 0 0 0.5rem;
+  }
+  ul {
+    margin: 0.5rem;
+    li {
+      list-style: none;
+    }
+  }
+}
+// Schedule Page
+#post-66 {
+  margin: 1rem;
+
+  p {
+    max-width: 50rem;
+    margin: 0 auto;
+  }
+}
+.schedule {
+  max-width: 50rem;
+  margin: 0 auto;
+  text-align: center;
+  thead {
+    background-color: rgb(134, 199, 255);
+    th {
+      width: 5rem;
+    }
+  }
+  tr:nth-of-type(even) {
+    background-color: rgb(215, 213, 213);
+  }
+}
+// News Archive Page
+article.post.type-post {
+  border: 2px solid black;
+  border-radius: 4px;
+  max-width: 35rem;
+  margin: 1rem auto;
+  padding: 1rem 0.5rem;
+  a {
+    max-width: 14rem;
+  }
+}
+// Search Page
+.no-results {
+  text-align: center;
+}
+// 404 page
+.error-404 {
+  margin-left: 1rem;
+  p {
+    text-align: center;
+  }
+}
